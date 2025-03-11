@@ -101,6 +101,10 @@ export const config = {
     //
     // Default request retries count
     connectionRetryCount: 3,
+
+    mochaOpts: {
+        timeout: 30000 // 30 second timeout for Mocha tests
+      },
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
