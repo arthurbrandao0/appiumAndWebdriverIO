@@ -22,7 +22,7 @@ export const config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './features/**/*.feature'
+        './test/specs/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -56,8 +56,7 @@ export const config = {
         "appium:deviceName": "emulator-5554",
         "appium:automationName": "UiAutomator2",
         "appium:appPackage": "com.google.android.youtube",
-        "appium:appActivity": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity",
-        "appium:noReset": true
+        "appium:appActivity": "com.google.android.apps.youtube.app.watchwhile.WatchWhileActivity"
     }],
 
     //
@@ -115,7 +114,7 @@ export const config = {
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
-    framework: 'cucumber',
+    framework: 'mocha',
 
     //
     // The number of times to retry the entire specfile when it fails as a whole
@@ -130,7 +129,7 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure', { outputDir: 'allure-results' }]],
+    reporters: [['allure', { outputDir: 'test/reports/allure-results' }]],
 
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
