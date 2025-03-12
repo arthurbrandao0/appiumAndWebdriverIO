@@ -8,5 +8,8 @@
     "@wdio/mocha-framework": "^9.11.0",
     "appium": "^2.16.2",
     "appium-uiautomator2-driver": "^4.1.1"
+  },
+  "dependencies": {
+    "@wdio/browserstack-service": "^9.11.0"
   }
 }

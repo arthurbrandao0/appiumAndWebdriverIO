@@ -34,11 +34,21 @@ Ensure that the environment variables for Java and Android SDK are properly set.
 
 4. Run Tests:  
 
+   ### Running Locally:
+
    ```bash  
    npx wdio wdio.conf.js  
    ```  
 
+   ### Running on BrowserStack (from Windows PowerShell):
+
+   ```bash
+   $env:USE_BROWSERSTACK="true"; $env:BROWSERSTACK_USERNAME="your_username"; $env:BROWSERSTACK_ACCESS_KEY="your_access_key"; npx wdio wdio.conf.js
+   ```
+
+
 ## Project Structure  
 
 - `test/specs/`: Contains the test specifications.  
+- `test/reports/`: Contains the test reports.  
 - `wdio.conf.js`: Configuration file for WebdriverIO.  
